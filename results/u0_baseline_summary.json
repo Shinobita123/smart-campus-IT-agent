@@ -1,0 +1,28 @@
+{
+  "baseline_id": "u0-initial-measurement",
+  "case_count": 3,
+  "metrics": {
+    "diagnostic_accuracy": 1.0,
+    "resolution_success_rate": 0.3333333333333333,
+    "valid_action_rate": 1.0,
+    "average_action_cost_per_case": 2.3333333333333335,
+    "verification_accuracy": 1.0
+  },
+  "totals": {
+    "successful_cases": 1,
+    "diagnoses_correct": 3,
+    "valid_actions": 3,
+    "actions_selected": 3,
+    "total_action_cost": 7,
+    "verification_results_correct": 3
+  },
+  "metric_definitions": {
+    "diagnostic_accuracy": "correct first diagnosis / all cases",
+    "resolution_success_rate": "cases meeting verified connectivity goal / all cases",
+    "valid_action_rate": "valid executed actions / all executed actions",
+    "average_action_cost_per_case": "sum of action costs / all cases, including zero-action cases",
+    "verification_accuracy": "terminal verification matching evaluator ground truth / all cases"
+  },
+  "measurement_command": ".\\.venv\\Scripts\\python.exe -m smart_campus_agent baseline --cases data/cases/baseline.json --output results/u0_baseline.jsonl --summary results/u0_baseline_summary.json",
+  "evidence_note": "Each JSONL record retains the exact case input, full raw result, and execution trace."
+}

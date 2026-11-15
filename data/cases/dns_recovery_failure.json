@@ -1,0 +1,16 @@
+{
+  "case_id": "dns_recovery_failure",
+  "case_type": "unsuccessful_recovery",
+  "task": "Restore Internet access when DNS is not working; the simulator will reject both DNS repair options.",
+  "initial_state": {
+    "wifi_connected": true,
+    "valid_ip": true,
+    "gateway_reachable": true,
+    "dns_working": false,
+    "internet_available": true
+  },
+  "failed_actions": ["repair_dns", "reset_network_stack"],
+  "expected_diagnosis": "dns",
+  "expected_success": false,
+  "max_actions": 8
+}

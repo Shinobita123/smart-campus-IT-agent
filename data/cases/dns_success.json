@@ -1,0 +1,16 @@
+{
+  "case_id": "dns_success",
+  "case_type": "representative_supported",
+  "task": "Restore Internet access when the device has Wi-Fi, a valid IP address, and a reachable gateway, but DNS is not working.",
+  "initial_state": {
+    "wifi_connected": true,
+    "valid_ip": true,
+    "gateway_reachable": true,
+    "dns_working": false,
+    "internet_available": true
+  },
+  "failed_actions": [],
+  "expected_diagnosis": "dns",
+  "expected_success": true,
+  "max_actions": 8
+}

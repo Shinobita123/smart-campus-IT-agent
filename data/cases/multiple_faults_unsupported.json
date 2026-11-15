@@ -1,0 +1,16 @@
+{
+  "case_id": "multiple_faults_unsupported",
+  "case_type": "unsupported_boundary",
+  "task": "Diagnose a device with more than one simultaneous network fault.",
+  "initial_state": {
+    "wifi_connected": true,
+    "valid_ip": true,
+    "gateway_reachable": true,
+    "dns_working": false,
+    "internet_available": false
+  },
+  "failed_actions": [],
+  "expected_diagnosis": "multiple_faults",
+  "expected_success": false,
+  "max_actions": 8
+}

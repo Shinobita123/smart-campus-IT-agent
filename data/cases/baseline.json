@@ -1,0 +1,8 @@
+{
+  "description": "U0 initial measurement: one supported case, one unsuccessful recovery, and one unsupported boundary case.",
+  "cases": [
+    "data/cases/dns_success.json",
+    "data/cases/dns_recovery_failure.json",
+    "data/cases/multiple_faults_unsupported.json"
+  ]
+}
